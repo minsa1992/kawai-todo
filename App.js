@@ -18,6 +18,7 @@ import {
   Dimensions,
   Platform
 } from 'react-native';
+import Todo from './ToDo';
 
 const {hegiht, width} = Dimensions.get("window");
 
@@ -40,6 +41,9 @@ export default class App extends React.Component{
            returnKeyType={"done"}
            autoCorrect={false}
            />
+           <ScrollView contentContainerStyle={styles.todos}>
+              <Todo/>
+           </ScrollView>
         </View>
       </View>
     );
@@ -91,5 +95,8 @@ const styles = StyleSheet.create({
       borderBottomColor:"#bbb",
       borderBottomWidth:1,
       fontSize:25
+    },
+    todos :{
+      alignItems:"center"
     }
 });
