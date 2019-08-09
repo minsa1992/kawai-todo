@@ -8,8 +8,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "16.8.6",
-    "react-native": "0.60.4"
+    "react-native": "0.60.4",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
